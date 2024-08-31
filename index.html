@@ -1,117 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css"> 
 </head>
 <body>
-    <!--MENU ENCABEZADO-->
+    <!-- MENU ENCABEZADO -->
     <div class="contenedor-header">
-        <header>
-            <div class="logo">
-                <a href="#">Laura Pereyra</a>
-            </div>
-            <nav id="nav">                                            
-                <ul>
-                    <li><a href="#inicio">INICIO</a></li>
-                    <li><a href="#sobremi">SOBRE MI</a></li>
-                    <li><a href="#habilidades">HABILIDADES</a></li>
-                    <li><a href="#curriculum">CURRICULUM</a></li>
-                    <li><a href="#portfolio">PORTFOLIO</a></li>
-                    <li><a href="#contacto">CONTACTO</a></li>
-                </ul>
-            </nav>
-            <div class="nav-responsive">
+        <header class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="#">Laura Pereyra</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa-solid fa-bars"></i>
-             </div>
-        </header>
-     </div>
-
-     <!--INICIO-->
-     <section id="inicio" class="inicio">
-        <div class="contenido-banner">
-            <div class="contenedor-img">
-                <img src="img/FotoCarnet-modified.png" alt="">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobremi">SOBRE MI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#habilidades">HABILIDADES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#curriculum">CURRICULUM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">CONTACTO</a>
+                    </li>
+                </ul>
             </div>
-            <h1>Laura Pereyra</h1>
-            <h2>Tester de Software - Estudiante de Desarrollo Web</h2>
-           <div class="redes">
-            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </header>
+    </div>
 
-           </div>
+    <!-- INICIO -->
+    <section id="inicio" class="inicio d-flex justify-content-center align-items-center text-center">
+        <div class="contenido-banner bg-dark text-white p-4 rounded">
+            <div class="contenedor-img mb-3">
+                <img src="img/FotoCarnet-modified.png" alt="" class="img-fluid rounded-circle border border-info">
+            </div>
+            <h1 class="display-4">Laura Pereyra</h1>
+            <h2 class="h5">Tester de Software - Estudiante de Desarrollo Web</h2>
+            <div class="redes mt-3">
+                <a href="#" class="btn btn-outline-info btn-circle mx-2"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#" class="btn btn-outline-info btn-circle mx-2"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
         </div>
-     </section>
+    </section>
 
-     <!---SOBREMI-->
-
-     <section id="sobremi" class="sobremi">
-        <div class="contenido-seccion">
-            <h2>Sobre Mí</h2>
-            <p><span>Hola, soy Laura Pereyra.</span>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                 Culpa, quos, ad neque eligendi error voluptas ducimus quae quo nihil officia qui, quaerat dolor quibusdam omnis sunt commodi rem quasi illo.</p>
-
-             <div class="fila">
-                <!---Datos Personales-->
-                <div class="col">
-                    <h3>Datos Personales</h3>
-                    <ul>
-                        <li>
-                            <strong>Cumpleaños</strong>
-                            21-05-1999
-                        </li>
-                        <li>
-                            <strong>Teléfono</strong>
-                            094647413
-                        </li>
-                        <li>
-                            <strong>Email</strong>
-                            laurapereyra.ech@gmail.com
-                        </li>
-                        <li>
-                            <strong>Ubicación</strong>
-                              Montevideo-Uruguay
-                        </li>
+    <!-- SOBRE MI -->
+    <section id="sobremi" class="sobremi bg-dark text-white py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Sobre Mí</h2>
+            <p class="text-center mb-4"><span class="font-weight-bold text-info">Hola, soy Laura Pereyra.</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, quos, ad neque eligendi error voluptas ducimus quae quo nihil officia qui, quaerat dolor quibusdam omnis sunt commodi rem quasi illo.</p>
+            <div class="row">
+                <!-- Datos Personales -->
+                <div class="col-md-6 mb-4">
+                    <h3 class="h4">Datos Personales</h3>
+                    <ul class="list-unstyled">
+                        <li><strong>Cumpleaños:</strong> 21-05-1999</li>
+                        <li><strong>Teléfono:</strong> 094647413</li>
+                        <li><strong>Email:</strong> laurapereyra.ech@gmail.com</li>
+                        <li><strong>Ubicación:</strong> Montevideo-Uruguay</li>
                     </ul>
-                 </div>
-
-                 <!---Intereses-->
-                 <div class="col">
-                    <h3>Intereses</h3>
-                    <div class="contenedor-intereses">
-                        <div class="interes">
-                            <i class="fa-solid fa-book"></i>
-                            <span>LIBROS</span>
-                            <div class="interes">
-                            <i class="fa-solid fa-headphones"></i>
-                            <span>MÚSICA</span>
-                            </div>
-                            <div class="interes">
-                            <i class="fa-solid fa-palette"></i>
-                            <span>ARTE</span>
+                </div>
+                <!-- Intereses -->
+                <div class="col-md-6 mb-4">
+                    <h3 class="h4">Intereses</h3>
+                    <div class="d-flex flex-wrap">
+                        <div class="interes mx-2 text-center">
+                            <i class="fa-solid fa-book fa-2x"></i>
+                            <div>LIBROS</div>
                         </div>
-                        <div class="interes">
-                            <i class="fa-brands fa-twitch"></i>
-                            <span>TWITCH</span>
+                        <div class="interes mx-2 text-center">
+                            <i class="fa-solid fa-headphones fa-2x"></i>
+                            <div>MÚSICA</div>
                         </div>
-
+                        <div class="interes mx-2 text-center">
+                            <i class="fa-solid fa-palette fa-2x"></i>
+                            <div>ARTE</div>
+                        </div>
+                        <div class="interes mx-2 text-center">
+                            <i class="fa-brands fa-twitch fa-2x"></i>
+                            <div>TWITCH</div>
+                        </div>
                     </div>
-                    </div>
-                 </div>
-             </div>
-             <button>
-                <i class="fa-solid fa-download"></i>
-                Descargar CV
+                </div>
+            </div>
+            <button class="btn btn-info mt-4">
+                <i class="fa-solid fa-download"></i> Descargar CV
                 <span class="overlay"></span>
-             </button>
-             
+            </button>
         </div>
+    </section>
 
-     </section>
-   
-    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
